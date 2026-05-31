@@ -1,0 +1,131 @@
+body {
+    background-color: #121212;
+    color: #F5F5DC;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+section {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+}
+
+h1,
+h2,
+h3 {
+    color: #D4AF37;
+    font-family: 'EB Garamond', serif;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+#inicio {
+    text-align: center;
+}
+
+article {
+    border: 1px solid #D4AF37;
+    padding: 20px;
+    border-radius: 10px;
+    background: #1a1a1a;
+    transition: transform 0.2s ease;
+}
+
+a {
+    color: #D4AF37;
+}
+
+article {
+    border: 1px solid #D4AF37;
+    padding: 20px;
+    border-radius: 10px;
+    background: #1a1a1a;
+    transition: transform 0.2s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.contenedor-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+#contacto {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* lista centrada real */
+#contacto ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+/* links */
+#contacto a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* formulario limpio */
+#contacto form {
+    width: 100%;
+    max-width: 420px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #F5F5DC;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* campos iguales */
+#contacto input,
+#contacto textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #D4AF37;
+    border-radius: 8px;
+    background: #F5F5DC;
+    box-sizing: border-box;
+}
+
+/* textarea normal (NO gigante) */
+#contacto textarea {
+    height: 80px;
+    resize: none;
+}
+
+/* botón */
+#contacto button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #D4AF37;
+    cursor: pointer;
+}
+
+#contacto button:hover {
+    background: #b9962f;
+}
