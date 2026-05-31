@@ -5,6 +5,15 @@ body {
     margin: 0;
 }
 
+body {
+    background-color: #121212;
+    color: #F5F5DC;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
 main {
     padding: 40px 20px;
 }
@@ -12,6 +21,10 @@ main {
 section {
     max-width: 900px;
     margin: 0 auto 40px auto;
+
+    main {
+        padding-top: 80px;
+    }
 }
 
 h1,
@@ -25,33 +38,46 @@ section {
     margin-bottom: 60px;
 }
 
-#inicio {
+#sobre-mi {
     text-align: center;
 }
 
-article {
-    border: 1px solid #D4AF37;
-    padding: 20px;
-    border-radius: 10px;
-    background: #1a1a1a;
-    transition: transform 0.2s ease;
+#sobre-mi {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 60px auto;
+    line-height: 1.7;
+
+}
+
+#habilidades {
+    text-align: center;
+}
+
+#habilidades ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 a {
     color: #D4AF37;
 }
 
-article {
-    border: 1px solid #D4AF37;
-    padding: 20px;
-    border-radius: 10px;
+.card {
     background: #1a1a1a;
-    transition: transform 0.2s ease;
+    border: 1px solid #D4AF37;
+    border-radius: 14px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
 }
 
-article:hover {
-    transform: translateY(-5px);
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 }
+
 
 h2 {
     margin-bottom: 20px;
@@ -128,4 +154,190 @@ h2 {
 
 #contacto button:hover {
     background: #b9962f;
+}
+
+#habilidades ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#habilidades li {
+    display: inline-block;
+    margin: 6px;
+    padding: 8px 12px;
+    border: 1px solid #D4AF37;
+    border-radius: 8px;
+}
+
+#habilidades {
+    text-align: center;
+}
+
+.contenedor-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1a1a1a;
+    border: 1px solid #D4AF37;
+    border-radius: 14px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    width: 100%;
+    height: 140px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #121212;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #D4AF37;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #D4AF37;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #F5F5DC;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#habilidades ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+}
+
+#habilidades li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border: 1px solid #D4AF37;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+#habilidades li i {
+    color: #D4AF37;
+    font-size: 18px;
+}
+
+#habilidades li:hover {
+    background: #D4AF37;
+    color: #121212;
+}
+
+#habilidades li:hover i {
+    color: #121212;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: 1px solid #D4AF37;
+    border-radius: 8px;
+    color: #D4AF37;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #D4AF37;
+    color: #121212;
+}
+
+@media (max-width: 768px) {
+    .contenedor-proyectos {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    #habilidades ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.card {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+::selection {
+    background: #D4AF37;
+    color: #121212;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    border-top: 1px solid #D4AF37;
+    color: #F5F5DC;
+    font-size: 14px;
 }
