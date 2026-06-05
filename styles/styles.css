@@ -3,13 +3,6 @@ body {
     color: #F5F5DC;
     font-family: Arial, sans-serif;
     margin: 0;
-}
-
-body {
-    background-color: #121212;
-    color: #F5F5DC;
-    font-family: Arial, sans-serif;
-    margin: 0;
     padding: 0;
 }
 
@@ -21,10 +14,10 @@ main {
 section {
     max-width: 900px;
     margin: 0 auto 40px auto;
+}
 
-    main {
-        padding-top: 80px;
-    }
+main {
+    padding-top: 80px;
 }
 
 h1,
@@ -105,13 +98,12 @@ h2 {
     gap: 6px;
 }
 
-/* links */
 #contacto a {
     text-decoration: none;
-    color: #000;
+    color: #D4AF37;
 }
 
-/* formulario limpio */
+
 #contacto form {
     width: 100%;
     max-width: 420px;
@@ -125,7 +117,7 @@ h2 {
     gap: 10px;
 }
 
-/* campos iguales */
+
 #contacto input,
 #contacto textarea {
     width: 100%;
@@ -137,13 +129,12 @@ h2 {
     box-sizing: border-box;
 }
 
-/* textarea normal (NO gigante) */
 #contacto textarea {
     height: 80px;
     resize: none;
 }
 
-/* botón */
+
 #contacto button {
     padding: 10px;
     border: none;
